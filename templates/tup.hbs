@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Upload</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Photo Upload</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo" id="photo" accept="image/*">
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wardrobe Options</title>
+   <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url('https://www.moooihomepk.com/wp-content/uploads/2020/06/walk-in-closet-wardrobe-design-1.jpg') no-repeat;
+   background-size: cover;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.option {
+  width: 350px;
+  margin: 0 20px;
+  padding: 20px;
+  
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+
+.option:hover h2, .option:hover p, .option:hover a {
+  color: white;
+}
+
+.option:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.option h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.option p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.option a {
+  color: black;
+  text-decoration: none;
+}
+
+.description {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.description h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 24px;
+}
+
+.options-container{
+    margin-top: 100px;
+    position: relative;
+    width: 700px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   </style>
+  </head>
+  <body>
+    <div class="options-container">
+      <div class="option" id="create-wardrobe">
+        <h2>Create Wardrobe</h2>
+        <p>Create a new wardrobe and start adding your clothes!</p>
+        <a href="/upload">Create Wardrobe</a>
+      </div>
+      <div class="option" id="view-wardrobe">
+        <h2>View Wardrobe</h2>
+        <p>View and manage your existing wardrobe.</p>
+        <a href="/vw">View wardrobe</a>
+      </div>
+    </div>
+
+    {{!-- <div class="description">
+      <h1>Wardrobe Options</h1>
+      <p>Choose an option below to create or view your wardrobe.</p>
+    </div> --}}
+
+    <script src="script.js"></script>
+  </body>
+</html>
