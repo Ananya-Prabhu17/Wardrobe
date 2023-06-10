@@ -1,65 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View wardrobe</title>
-    <style>
-        /* styles.css */
-.dropdown {
-  position: relative;
-  display: inline-block;
+  <title>View Wardrobe</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <style>
+    .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.options a {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
   text-decoration: none;
-  display: block;
-  background-color: #f9f9f9;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.options a:hover {
+  background-color: #f0f0f0;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-    </style>
+  </style>
 </head>
 <body>
-  <div class="dropdown">
-    <button class="dropbtn">Choose Occasion</button>
-    <div class="dropdown-content">
-      <a href="/college">College</a>
-      <a href="#">Office</a>
-      <a href="#">Wedding</a>
-      <a href="#">Outing</a>
-      <a href="#">Interview</a>
+  <div class="container">
+    <h1>View Wardrobe</h1>
+    <div class="options">
+      <a href="/t">Traditional</a>
+      <a href="/p">Party</a>
+      <a href="/c">Casual</a>
     </div>
   </div>
 </body>
